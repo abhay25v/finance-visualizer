@@ -1,20 +1,8 @@
 {
   "version": 2,
   "name": "finance-visualizer",
-  "builds": [
-    {
-      "src": "next.config.mjs",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "NEXT_PUBLIC_APP_URL": "@next_public_app_url"
-  }
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install"
 }
